@@ -1,0 +1,50 @@
+# .gitignore — Files Git should NOT track
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# ── Project-specific: keep folders, ignore contents ──────────────────────────
+# We want Git to track the empty folders (via .gitkeep) but not the
+# actual chat histories or log files (they're personal / machine-specific).
+chat_history/*.json
+logs/*.log
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ── Editor/IDE ────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~# 1. Install and start Ollama
+curl -fsSL https://ollama.ai/install.sh | sh
+ollama pull llama3.2
+ollama serve
+
+# 2. Run — no pip install needed (pure stdlib)
+python main.py

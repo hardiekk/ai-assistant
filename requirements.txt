@@ -1,0 +1,26 @@
+# requirements.txt
+#
+# Version 1 uses ONLY Python standard library + ollama.
+# No paid APIs. No heavy dependencies.
+#
+# Install: pip install -r requirements.txt
+
+# Ollama Python client (optional wrapper — we use raw HTTP in v1
+# but listing it here for reference and future use)
+# ollama>=0.1.0
+
+# ── For future versions (commented out until needed) ────────────────────────
+# Version 2 — Streamlit Web UI
+# streamlit>=1.32.0
+
+# Version 3 — Voice Assistant
+# speechrecognition>=3.10.0
+# pyttsx3>=2.90
+# pyaudio>=0.2.14
+
+# Version 4 — AI Agents & PDF Chat
+# langchain>=0.1.0
+# langchain-community>=0.0.20
+# pypdf>=4.0.0
+# chromadb>=0.4.0
+# sentence-transformers>=2.5.0
